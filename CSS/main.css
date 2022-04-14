@@ -2,9 +2,31 @@
 /* 폰트 설정 */
 @font-face {
     font-family: 'YanoneKaffeesatz_Bold';
-    src: url("Fonts/YanoneKaffeesatz-SemiBold.ttf");
+    src: url("../Fonts/YanoneKaffeesatz-SemiBold.ttf");
 }
 
+@font-face {
+    font-family: 'ZenLoop_Regular';
+    src: url("../Fonts/ZenLoop-Regular.ttf");
+}
+
+
+/* 소제목 */
+#subtitle{
+    font-size: 30px;
+    font-family: 'ZenLoop_Regular';
+    text-align: center;
+    margin-top: 4%;
+    margin-bottom: 0%;
+}
+
+/* 제목 */
+#title{
+    font-size: 140px;
+    font-family: 'YanoneKaffeesatz_Bold';
+    text-align: center;
+    margin-top: 1.5%;
+}
 
 /* 크기 조절 시 맞추기 */
 
@@ -15,22 +37,8 @@
     }
 
     #title{
-        font-size: 60px;
+        font-size: 90px;
     }
 }
 
-/* 소제목 */
-#subtitle{
-    font-size: 30px;
-    text-align: center;
-    margin-top: 4%;
-    margin-bottom: 0%;
-}
 
-/* 제목 */
-#title{
-    font-size: 90px;
-    font-family: 'YanoneKaffeesatz_Bold';
-    text-align: center;
-    margin-top: 0%;
-}
