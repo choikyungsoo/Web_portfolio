@@ -10,34 +10,64 @@
     src: url("../Fonts/ZenLoop-Regular.ttf");
 }
 
+/* 모든 a태그는 밑줄이나 파란색 색깔이 없도록 */
+a{
+    text-decoration: none;
+    color: black;
+}
 
 /* 소제목 */
 #subtitle{
-    font-size: 30px;
+    font-size: 50px;
     font-family: 'ZenLoop_Regular';
     text-align: center;
-    margin-top: 4%;
+    margin-top: 6%;
     margin-bottom: 0%;
 }
 
 /* 제목 */
 #title{
-    font-size: 140px;
+    font-size: 200px;
     font-family: 'YanoneKaffeesatz_Bold';
     text-align: center;
-    margin-top: 1.5%;
+    margin-top: 0.5%;
+    margin-bottom: 0%;
+}
+
+/* 메뉴바 */
+#menubar {
+    margin: 0;
+    padding: 0;
+}
+#menubar ul {
+    margin: 0;
+    padding: 0;
+    width: 567px;
+    text-align: center;
+}
+
+#menubar ul li {
+    display: inline;
+    list-style-type: none;
+    padding: 0px 15px;
+}
+
+#menubar ul li a {
+    display: inline-block;
+    color: black;
+    text-decoration: none;
 }
 
 /* 크기 조절 시 맞추기 */
 
 /* 크기가 작은 컴퓨터들과 휴대폰을 위한 사이즈 */
-@media  screen and (max-width: 725px){
+@media  screen and (max-width: 875px){
     #subtitle{
         font-size: 20px;
     }
 
     #title{
-        font-size: 90px;
+        font-size: 130px;
     }
 }
 
