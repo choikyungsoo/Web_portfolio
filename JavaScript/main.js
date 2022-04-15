@@ -2,7 +2,9 @@
 
 // JQuery 코드 부분
 
-// 메인 프로필 서서히 나타나도록
+// 타이틀 서서히 나타나도록
 $(document).ready(function(){
-    $("#mainProfile").fadeIn(1000);
+    $("#title").fadeIn(1000);
+    $("#subtitle").fadeIn(1000);
+    $("#menubar").fadeIn(1000);
 });
