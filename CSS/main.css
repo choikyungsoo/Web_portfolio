@@ -10,6 +10,11 @@
     src: url("../Fonts/ZenLoop-Regular.ttf");
 }
 
+@font-face {
+    font-family: 'Amaranth_Regular';
+    src: url("../Fonts/Amaranth-Regular.ttf");
+}
+
 /* 모든 a태그는 밑줄이나 파란색 색깔이 없도록 */
 a{
     text-decoration: none;
@@ -40,21 +45,22 @@ a{
     padding: 0;
 }
 #menubar ul {
+    width: 100%;
     margin: 0;
     padding: 0;
-    width: 567px;
     text-align: center;
 }
 
 #menubar ul li {
-    display: inline;
+    display: inline-block;
     list-style-type: none;
     padding: 0px 15px;
 }
 
 #menubar ul li a {
-    display: inline-block;
     color: black;
+    font-family: 'Amaranth_Regular';
+    font-size: 20px;
     text-decoration: none;
 }
 
@@ -68,6 +74,15 @@ a{
 
     #title{
         font-size: 130px;
+    }
+}
+
+@media  screen and (max-width: 572px){
+    #menubar ul li {
+        display: block;
+        text-align: center;
+        list-style-type: none;
+        padding: 0px 15px;
     }
 }
 
