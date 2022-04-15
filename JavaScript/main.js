@@ -1,36 +1,8 @@
-var mainProfile;
-var Fadein_Anim;
-var opacity = 0;
-var intervalID = 0;
+// JavaScript 코드 부분
 
-function MainProfileEvent(){
-    mainProfile = document.getElementById("mainProfile");
-    Fadein_Anim = setInterval(show, 200);
-    $(document).ready(function(){
-        $("#mainProfile").fadeIn(5000);
-    });
-}
+// JQuery 코드 부분
 
-// JQuery 부분
-
-
-function show(){
-    mainProfile = document.getElementById("mainProfile");
-    opacity = Number(window.getComputedStyle(mainProfile).getPropertyValue("opacity"));
-    if(opacity<1){
-        //Fade in 핵심 부분
-        opacity = opacity+0.1;
-        mainProfile.style.opacity=opacity;
-        //img.style.opacity=opacity;
-    }
-    else{
-        clearInterval(intervalID);
-    }
-}
-
-window.onload = function(){
-    setTimeout(MainProfileEvent(), 500);
-    Fadein_Anim = setInterval(show, 200);
-    
-}
-
+// 메인 프로필 서서히 나타나도록
+$(document).ready(function(){
+    $("#mainProfile").fadeIn(1000);
+});

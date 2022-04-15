@@ -70,6 +70,8 @@ a{
 }
 
 #mainProfile{
+    display: none;
+    top: 50px;
     width: 650px;
     height: 600px;
 }
