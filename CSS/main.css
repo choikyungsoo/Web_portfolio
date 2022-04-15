@@ -64,6 +64,15 @@ a{
     text-decoration: none;
 }
 
+#menubar ul li a:hover{
+    text-underline-position: under;
+    text-decoration: underline;
+}
+
+#mainProfile{
+    
+}
+
 /* 크기 조절 시 맞추기 */
 
 /* 크기가 작은 컴퓨터들과 휴대폰을 위한 사이즈 */
