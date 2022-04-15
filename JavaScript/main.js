@@ -6,7 +6,13 @@ var intervalID = 0;
 function MainProfileEvent(){
     mainProfile = document.getElementById("mainProfile");
     Fadein_Anim = setInterval(show, 200);
+    $(document).ready(function(){
+        $("#mainProfile").fadeIn(5000);
+    });
 }
+
+// JQuery 부분
+
 
 function show(){
     mainProfile = document.getElementById("mainProfile");
@@ -25,9 +31,6 @@ function show(){
 window.onload = function(){
     setTimeout(MainProfileEvent(), 500);
     Fadein_Anim = setInterval(show, 200);
+    
 }
 
-// JQuery 부분
-$(document).ready(function(){
-    $('img#mainProfile').fadeIn(2000);
-});
