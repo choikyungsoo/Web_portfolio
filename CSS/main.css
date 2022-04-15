@@ -70,13 +70,18 @@ a{
 }
 
 #mainProfile{
-    
+    width: 650px;
+    height: 600px;
+}
+
+section{
+    text-align: center;
 }
 
 /* 크기 조절 시 맞추기 */
 
 /* 크기가 작은 컴퓨터들과 휴대폰을 위한 사이즈 */
-@media  screen and (max-width: 875px){
+@media  screen and (max-width: 889px){
     #subtitle{
         font-size: 20px;
     }
@@ -85,13 +90,23 @@ a{
         font-size: 130px;
     }
 }
-
+@media  screen and (max-width: 657px){
+    #mainProfile{
+        width: 550px;
+        height: 500px;
+    }
+}
 @media  screen and (max-width: 572px){
     #menubar ul li {
         display: block;
         text-align: center;
         list-style-type: none;
         padding: 0px 15px;
+    }
+
+    #mainProfile{
+        width: 350px;
+        height: 300px;
     }
 }
 
