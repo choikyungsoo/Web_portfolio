@@ -26,3 +26,8 @@ window.onload = function(){
     setTimeout(MainProfileEvent(), 500);
     Fadein_Anim = setInterval(show, 200);
 }
+
+// JQuery 부분
+$(document).ready(function(){
+    $('img#mainProfile').fadeIn(2000);
+});
